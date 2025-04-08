@@ -1,5 +1,5 @@
 # makefile-learning
-This repo was created to document all my learnings on makefiles. It may help others also who are trying to understand makefiles.
+This repo was created to document all my learnings on makefiles. It may help others also too are trying to understand makefiles.
 
 ## Approach
 1. The approach used in this repo is to provide a historical context on why makefiles were introduced.
