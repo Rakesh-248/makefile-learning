@@ -36,3 +36,7 @@ Each part has a purpose:
 main.o: main.c main.h
   gcc -c main.c -o main.o
 ```
+To trigger the build one has to run the make program with the target.
+```
+make main.o
+```
