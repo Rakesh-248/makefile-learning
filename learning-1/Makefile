@@ -8,9 +8,13 @@
 
 #target: 	 	main
 # Historically, this is the name of the file to be generated. In this case it is the executable main.
-# Need to specify this target along with the make cmd. Example "make main".
+# One has to specify this target name along with the make cmd during build. Example "make main".
 
 #dependencies: 		main.c
+# Before running the rule for the target (main), make checks if the dependency files are present.
+# If the file is not present then it runs the rule to generate the file.
+
+
 # Historically, one other problem that the developers faced was for a small change in one file among thousand, all the files had to be recompiled.
 # This problem was solved in Makefile by the introduction of dependencies. 
 # The target gets executed only if the target file "main" has a last modified timestamp less than that of the dependency file main.c.
