@@ -1,3 +1,9 @@
+#Makefile generic structure
+#---------------------------
+#target: dependencies
+#	rule
+#---------------------------
+
 add.o: add.c
 	gcc -c add.c -o add.o
 
