@@ -17,3 +17,5 @@
 6. Hence when **'make main'** is run, first the target for **main.o** is called and then the target for **add.o** is called.
 7. Once both files are generated, the rule for main gets executed.
 8. This way the user need not to worry which targets needs to be built before building the final target.
+
+Note: **"@echo"** is used for printing text in Makefile.
