@@ -15,6 +15,13 @@
 4. Run 'make main'. You only see prints for building subtract.o and main.
 5. The build for add.o and main.o is skipped because its and its dependencie's last modified timestamp is lesser than that of main.
 
-Note: The last modified timestamp is not compared just for one level of dependencies but for all the recurring dependencies. 
-      In this case, subtract.o modified timestamp is still less than that of main. But subtract.o's dependency subtract.c has a modified timestamp greater than subtract.o.
-      Hence subtract.o and all its dependent tragets get rebuilt.
+**Note1:**
+- The last modified timestamp is not compared just for one level of dependencies but for all the recurring dependencies. 
+- In this case, subtract.o modified timestamp is still less than that of main. But subtract.o's dependency subtract.c has a modified timestamp greater than subtract.o.
+- Hence subtract.o and all its dependent tragets get rebuilt.
+
+  **Note2:** Need for mentioning the .c files
+  - Before building the target, Makefile checks if the dependency files exists.
+  - The ".c" files always exist. So, is it required to mentioned them as a dependency?
+  - Yes, because dependencies are not just checked for existence but also checked if they were modified post last run.
+  - Hence, always mention the .c files as part of dependency eventhough you know they always exist.
