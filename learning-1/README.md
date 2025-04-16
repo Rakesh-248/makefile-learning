@@ -33,10 +33,10 @@ Each part has a purpose:
 3. Rule: The commands to build the target.
 
 ```
-main.o: main.c main.h
-  gcc -c main.c -o main.o
+main: main.c main.h
+  gcc -c main.c -o main
 ```
 To trigger the build one has to run the make program with the target.
 ```
-make main.o
+make main
 ```
