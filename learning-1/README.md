@@ -40,3 +40,8 @@ To trigger the build one has to run the make program with the target.
 ```
 make main
 ```
+### Hands-on
+- This folder contains a 'c' file and a corresponding Makefile. 
+- The Makefile builds the 'c' file.
+- Based on the learnings, observe the Makefile for target, dependencies, and the rule.
+- To build, run 'make main'.
