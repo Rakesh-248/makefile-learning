@@ -7,7 +7,16 @@ main.o: main.c
 main: add.o main.o
 	gcc main.o add.o -o main
 
+trial:
+	@echo "-----------------"
+	@echo "| Running Trial |"
+	@echo "-----------------"
+
+.PHONY: clean
 clean:
+	@echo "-----------------"
+	@echo "| Running Clean |"
+	@echo "-----------------"
 	rm main
 	rm main.o
 	rm add.o
