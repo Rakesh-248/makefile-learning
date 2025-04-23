@@ -4,13 +4,10 @@
 #main.o: main.c
 #	gcc -c main.c -o main.o
 
+CC = gcc
+
 main: add.o main.o
 	gcc main.o add.o -o main
-
-trial:
-	@echo "-----------------"
-	@echo "| Running Trial |"
-	@echo "-----------------"
 
 .PHONY: clean
 clean:
