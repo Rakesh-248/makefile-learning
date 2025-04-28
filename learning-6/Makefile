@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-%.o: %.c
+.c.o:
 	@echo "-----------------"
 	@echo "| Building $< |"
 	@echo "-----------------"
